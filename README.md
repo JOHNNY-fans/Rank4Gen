@@ -208,6 +208,28 @@ Each folder contains runnable `.sh` scripts to reproduce training.
 
 ---
 
+## Resources
+
+### 📦 Models
+| Model | Description |
+|:---------|:------------|
+| [Rank4Gen-DPO-Qwen3-8B](https://modelscope.cn/models/JohnnyFan/Rank4Gen-DPO-Qwen3-8B) | Built on Qwen3-8B with full SFT + DPO training, supporting both `/index` mode and snapshot mode. |
+| [Rank4Gen-SFT-Qwen3-8B](https://modelscope.cn/models/JohnnyFan/Rank4Gen-SFT-Qwen3-8B) | Built on Qwen3-8B with supervised fine-tuning (SFT) only, without DPO optimization. |
+| [Rank4Gen-DPO-Qwen3-8B-index](https://modelscope.cn/models/JohnnyFan/Rank4Gen-DPO-Qwen3-8B-index) | Built on Qwen3-8B with full SFT + DPO training, optimized specifically for `/index` mode inference. |
+| [Rank4Gen-SFT-Qwen3-8B-index](https://modelscope.cn/models/JohnnyFan/Rank4Gen-SFT-Qwen3-8B-index) | Built on Qwen3-8B with SFT-only training, tailored for `/index` mode usage. |
+
+Additional, stronger models will be released progressively. *To be released soon...*
+
+### 📂 Datasets
+
+We provide the training data used during the Rank4Gen experimental process.
+
+| Dataset                                                                                           | Description                                                                                                                                                                                                                                                        |
+| :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Rank4Gen-SFT-dataset](https://huggingface.co/datasets/Johnnyfans/Rank4Gen-SFT-dataset)   | Supervised fine-tuning (SFT) datasets based on PRISM_13K  |
+| [Rank4Gen-DPO-dataset](https://huggingface.co/datasets/Johnnyfans/Rank4Gen-DPO-dataset) | DPO datasets based on PRISM_13K |
+---
+
 ## 📄 License
 
 This project is released under the license in `LICENSE`.
@@ -216,12 +238,4 @@ This project is released under the license in `LICENSE`.
 
 ## 📚 Citation
 
-If you use Rank4Gen in your research, please cite:
-
-```bibtex
-@article{rank4gen2026,
-  title={Rank4Gen: RAG-Preference-Aligned Document Set Selection and Ranking},
-  author={...},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
-  year={2026}
-}
+To be continued.
