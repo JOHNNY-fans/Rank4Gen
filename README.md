@@ -45,7 +45,63 @@ Rank4Gen/
 
 ---
 
-## 🚀 Evaluation Pipeline (Quick Start)
+## 🚀 Quick Start: Example (Ranker → Generator)
+
+```python
+from rank4gen.demo import Rank4GenDemo, Rank4GenDemoConfig
+
+# 1) Configure endpoints and model paths
+cfg = Rank4GenDemoConfig(
+    # Ranker
+    ranker_api_base="http://127.0.0.1:8800/v1",
+    ranker_model="Rank4Gen",
+    ranker_tokenizer_path="/path/to/ranker_tokenizer_or_model",
+    lang="en",
+    mode="index",
+    downstream_model_for_ranker_desc="Qwen2.5-7B-Instruct",  # used in Ranker system prompt
+
+    # Downstream Generator
+    downstream_api_base="http://127.0.0.1:8801/v1",
+    downstream_model="Qwen2.5-7B-Instruct",
+    downstream_model_path="/path/to/downstream_hf_model",
+)
+
+demo = Rank4GenDemo(cfg)
+
+# 2) One sample (same format as evaluation/input/*.jsonl)
+sample = {
+    "query": "On what day, month, and year was Ila Pant (an Indian politician) born?",
+    "answers": ["10 March 1938"],
+    "documents": [
+        {
+            "title": "Ila Pant",
+            "text": "ila pant... (born 10 march 1938) ... born in nainital district ... on 10 march 1938 ...",
+            "is_supporting": True,
+            "id": "1",
+        },
+        {
+            "title": "Sardar Vallabhbhai Patel death anniversary: Interesting facts about the Iron Man of India",
+            "text": "sardar vallabhbhai patel death anniversary ...",
+            "is_supporting": False,
+            "id": "2",
+        }
+        # ... (other docs)
+    ],
+}
+
+query = sample["query"]
+documents = sample["documents"]
+
+# 3) Run end-to-end: Ranker selects a set of docs -> Downstream answers using selected set
+out = demo.run(query, documents)
+
+print("Selected IDs (ordered):", out["ranked_ids"]) # ['1', '21', '22']
+print("Downstream Generator Answer:", out["answer"]) # Ila Pant was born on 10 March 1938.
+```
+
+---
+
+## 🚀 Evaluation Pipeline
 
 The evaluation pipeline consists of **three steps**:
 
