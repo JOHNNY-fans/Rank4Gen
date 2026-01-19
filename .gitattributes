@@ -1,1 +1,11 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
+figure/rank4gen_framework.pptx filter=lfs diff=lfs merge=lfs -text
+./figure/rank4gen_framework.pptx
+figure/framework.svg filter=lfs diff=lfs merge=lfs -text
+./figure/framework.svg
+evaluation/input/test_dataset.zip filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/test_dataset.zip
+.git/objects/pack/pack-fde6bd5716294ee4d150d9869c681c79e8d75aac.pack filter=lfs diff=lfs merge=lfs -text
+./.git/objects/pack/pack-fde6bd5716294ee4d150d9869c681c79e8d75aac.pack
+.git/lfs/objects/e2/b5/e2b5fecd9279d57f708c918e81a16d8cb0865c021b8fab0fdf51c1ecd8ea5def filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/e2/b5/e2b5fecd9279d57f708c918e81a16d8cb0865c021b8fab0fdf51c1ecd8ea5def

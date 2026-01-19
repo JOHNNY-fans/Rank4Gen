@@ -238,4 +238,16 @@ This project is released under the license in `LICENSE`.
 
 ## 📚 Citation
 
-To be continued.
+If you use Rank4Gen in your research, please cite:
+
+```bibtex
+@misc{fan2026rank4genragpreferencealigneddocumentset,
+      title={Rank4Gen: RAG-Preference-Aligned Document Set Selection and Ranking}, 
+      author={Yongqi Fan and Yuxiang Chu and Zhentao Xia and Xiaoyang Chen and Jie Liu and Haijin Liang and Jin Ma and Ben He and Yingfei Sun and Dezhi Ye and Tong Ruan},
+      year={2026},
+      eprint={2601.11273},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2601.11273}, 
+}
+```
