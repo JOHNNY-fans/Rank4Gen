@@ -292,7 +292,7 @@ This project is released under the license in `LICENSE`.
 
 ---
 
-## 📚 Citation
+<!-- ## 📚 Citation
 
 If you use Rank4Gen in your research, please cite:
 
@@ -306,4 +306,4 @@ If you use Rank4Gen in your research, please cite:
       primaryClass={cs.IR},
       url={https://arxiv.org/abs/2601.11273}, 
 }
-```
+``` -->
