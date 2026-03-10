@@ -16,7 +16,7 @@ We propose **Rank4Gen**: *RAG-Preference-Aligned Document Set Selection and Rank
 Clone this repository and install dependencies:
 
 ```bash
-git clone git@github.com:JOHNNY-fans/Rank4Gen.git
+git clone this repository
 cd Rank4Gen
 pip install -r requirements.txt
 ````
