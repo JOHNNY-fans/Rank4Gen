@@ -266,13 +266,15 @@ Each folder contains runnable `.sh` scripts to reproduce training.
 
 ## Resources
 
+The resources will be released publicly after the review period.
+
 ### 📦 Models
 | Model | Description |
 |:---------|:------------|
-| [Rank4Gen-DPO-Qwen3-8B](https://modelscope.cn/models/JohnnyFan/Rank4Gen-DPO-Qwen3-8B) | Built on Qwen3-8B with full SFT + DPO training, supporting both `/index` mode and snapshot mode. |
-| [Rank4Gen-SFT-Qwen3-8B](https://modelscope.cn/models/JohnnyFan/Rank4Gen-SFT-Qwen3-8B) | Built on Qwen3-8B with supervised fine-tuning (SFT) only, without DPO optimization. |
-| [Rank4Gen-DPO-Qwen3-8B-index](https://modelscope.cn/models/JohnnyFan/Rank4Gen-DPO-Qwen3-8B-index) | Built on Qwen3-8B with full SFT + DPO training, optimized specifically for `/index` mode inference. |
-| [Rank4Gen-SFT-Qwen3-8B-index](https://modelscope.cn/models/JohnnyFan/Rank4Gen-SFT-Qwen3-8B-index) | Built on Qwen3-8B with SFT-only training, tailored for `/index` mode usage. |
+| **Rank4Gen-DPO-Qwen3-8B** | Built on Qwen3-8B with full SFT + DPO training, supporting both `/index` mode and snapshot mode. |
+| **Rank4Gen-SFT-Qwen3-8B** | Built on Qwen3-8B with supervised fine-tuning (SFT) only, without DPO optimization. |
+| **Rank4Gen-DPO-Qwen3-8B-index** | Built on Qwen3-8B with full SFT + DPO training, optimized specifically for `/index` mode inference. |
+| **Rank4Gen-SFT-Qwen3-8B-index** | Built on Qwen3-8B with SFT-only training, tailored for `/index` mode usage. |
 
 Additional, stronger models will be released progressively. *To be released soon...*
 
@@ -282,9 +284,9 @@ We provide the training data used during the Rank4Gen experimental process.
 
 | Dataset                                                                                           | Description                                                                                                                                                                                                                                                        |
 | :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [PRISM_13K](https://huggingface.co/datasets/Johnnyfans/PRISM_13K)   | The raw dataset used in the experiments of the paper |
-| [Rank4Gen-SFT-dataset](https://huggingface.co/datasets/Johnnyfans/Rank4Gen-SFT-dataset)   | Supervised fine-tuning (SFT) datasets based on PRISM_13K  |
-| [Rank4Gen-DPO-dataset](https://huggingface.co/datasets/Johnnyfans/Rank4Gen-DPO-dataset) | DPO datasets based on PRISM_13K |
+| **PRISM_13K**   | The raw dataset used in the experiments of the paper |
+| **Rank4Gen-SFT-dataset**   | Supervised fine-tuning (SFT) datasets based on PRISM_13K  |
+| **Rank4Gen-DPO-dataset** | DPO datasets based on PRISM_13K |
 ---
 
 ## 📄 License
