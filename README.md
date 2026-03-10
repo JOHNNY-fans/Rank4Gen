@@ -282,6 +282,7 @@ We provide the training data used during the Rank4Gen experimental process.
 
 | Dataset                                                                                           | Description                                                                                                                                                                                                                                                        |
 | :------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [PRISM_13K](https://huggingface.co/datasets/Johnnyfans/PRISM_13K)   | The raw dataset used in the experiments of the paper |
 | [Rank4Gen-SFT-dataset](https://huggingface.co/datasets/Johnnyfans/Rank4Gen-SFT-dataset)   | Supervised fine-tuning (SFT) datasets based on PRISM_13K  |
 | [Rank4Gen-DPO-dataset](https://huggingface.co/datasets/Johnnyfans/Rank4Gen-DPO-dataset) | DPO datasets based on PRISM_13K |
 ---
